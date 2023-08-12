@@ -1,0 +1,37 @@
+1. CREATE TABLE Customers (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    address VARCHAR(255),
+    phone_number VARCHAR(50)
+);
+
+
+2 . INSERT INTO Customers(id,name,email,address,phone_number) values(1,"varun","varun@mail","1 block chandanichowk","234567892"),(2,"albert","albert@mail","1 block chandanichowk","234567892")
+
+3 . select * from Customers
+
+4 . select name , email from Customers
+
+5 . select * from Customers where id = 3
+
+6 . select * from Customers where name like 'a%'
+
+7 . select * from Customers order  by name desc;
+
+8 . UPDATE customers SET address = '123 New Street, Cityville, Country' WHERE id = 4;
+
+9 . select * from Customers order by id limit 3
+
+10 . DELETE FROM Customers WHERE id=2 
+
+11 . select count(*) from Customers
+
+12 . select * from Customers order by id offset 2
+
+13 . select * from customers where id > 2 and name like 'b%'
+
+14 . select * from customers where id < 3 and name like '%s'
+
+15 . SELECT * FROM customers WHERE phone_number IS NULL;
+
